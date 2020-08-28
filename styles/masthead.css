@@ -1,13 +1,13 @@
 .masthead {
   width: 100%;
   height: calc(100vh - 60px);
-  background-image: url("/assets/forest.jpg");
+  background-image: url("./assets/forest.jpg");
   background-image: -webkit-linear-gradient(
       rgba(22, 22, 22, 0) 20%,
       rgba(22, 22, 22, 0.2) 80%,
       rgba(22, 22, 22, 1) 100%
     ),
-    url("/assets/forest.jpg");
+    url("./assets/forest.jpg");
   background-position: 56% 50%;
   background-size: cover;
   display: grid;
