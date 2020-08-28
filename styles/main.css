@@ -1,0 +1,105 @@
+.section {
+  padding: 4rem 2rem;
+  display: grid;
+  place-items: center;
+}
+
+.section-container {
+  width: 100%;
+  max-width: 840px;
+}
+
+/** SECTION 1 **/
+.section-1 h1 {
+  margin-bottom: 4rem;
+}
+
+.section-1 .text-container {
+  margin: 2rem 0;
+}
+
+/** SECTION 2 **/
+.section-2 {
+  background-color: var(--second-bg);
+}
+
+.section-2 .img-container {
+  width: 50px;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.section-2 p {
+  margin-bottom: 1.4rem;
+}
+
+/** SECTION 3 **/
+.section-3 {
+  min-height: 40rem;
+  background-image: url("/assets/camera.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 40% 50%;
+}
+
+.section-3 p {
+  margin: 2.5rem 0 1.5rem 0;
+}
+
+/** SECTION 4 **/
+.section-4 p {
+  margin: 1.5rem 0;
+}
+
+/* Select all child elements (categories) except last one */
+.section-4 .section-container > :not(:last-child) {
+  margin: 5rem 0;
+}
+
+@media only screen and (min-width: 640px) {
+  .section {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-1 .section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin: 6rem 0;
+  }
+
+  .section-1 h2 {
+    margin: 2rem 0;
+  }
+
+  .section-2 .section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .section-3 {
+    justify-items: start;
+  }
+
+  .section-3 .text-container {
+    max-width: 20rem;
+  }
+
+  .section-4 .section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .section-4 .section-container .category {
+    margin: 5rem 0;
+    max-width: 12rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+}

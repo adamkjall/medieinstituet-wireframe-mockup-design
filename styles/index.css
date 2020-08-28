@@ -1,0 +1,77 @@
+:root {
+  --main-bg: #161616;
+  --second-bg: #3b7ea6;
+  --accent: #f15929;
+  --grey: #383737;
+  --white: white;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  color: var(--white);
+  background-color: var(--main-bg);
+}
+
+@font-face {
+  font-family: "Microsoft Yi Baiti";
+  src: url("/assets/fonts/msyi.ttf") format("truetype");
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Microsoft Yi Baiti";
+  font-weight: normal;
+  letter-spacing: 0.08rem;
+  margin: 1rem 0;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+
+hr {
+  border: 1px solid var(--grey);
+}
+
+.btn {
+  font-family: "Microsoft Yi Baiti";
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: var(--main-bg);
+  color: white;
+}
+
+.btn-secondary {
+  background-color: var(--accent);
+  color: black;
+}
+
+@media only screen and (min-width: 640px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  html {
+    font-size: 150%;
+  }
+}

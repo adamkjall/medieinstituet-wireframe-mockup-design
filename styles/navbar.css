@@ -1,0 +1,70 @@
+.nav-container {
+  background-color: var(--main-bg);
+  height: 60px;
+  display: grid;
+  place-items: center;
+  padding: 0 1rem;
+}
+
+.nav {
+  background-color: var(--main-bg);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 840px;
+}
+
+.nav .logo-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav .logo-container .logo {
+  width: 50px;
+  margin-right: 1rem;
+}
+
+.nav .logo-container .icon {
+  width: 40px;
+}
+
+.nav .nav-list {
+  list-style-type: none;
+  display: none;
+}
+
+.nav .nav-list li {
+  margin: 0 1rem;
+  font-family: "Microsoft Yi Baiti";
+}
+
+@media only screen and (min-width: 640px) {
+  .nav-container {
+    padding: 0 2rem;
+  }
+
+  .nav .hamburger-icon {
+    display: none;
+  }
+
+  .nav .nav-list {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .nav-container {
+    height: 90px;
+  }
+
+  .nav .logo-container .logo {
+    width: 70px;
+    margin-right: 1rem;
+  }
+
+  .nav .logo-container .icon {
+    width: 50px;
+  }
+}
