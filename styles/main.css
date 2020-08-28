@@ -35,7 +35,7 @@
 /** SECTION 3 **/
 .section-3 {
   min-height: 40rem;
-  background-image: url("./assets/camera.jpg");
+  background-image: url("../assets/camera.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 40% 50%;
